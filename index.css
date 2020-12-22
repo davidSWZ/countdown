@@ -12,10 +12,57 @@ body {
   align-items: center;
 }
 
+.existing-player {
+  color: rgb(67, 84, 117);
+  font-size: 10px;
+  font-weight: 100;
+  margin-top: -200px;
+  margin-bottom: 10px;
+}
+
+.Alba {
+  background-image: url(./thumbnail_IMG_3879.jpg);
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  margin-bottom: 50px;
+}
+
 .title {
-  color: rgb(20, 20, 21);
-  font-size: 900;
-  font-size: 40px;
+  color: rgb(19, 29, 49);
+  font-size: 20px;
+  font-weight: 900;
+  margin-bottom: 10px;
+  top: 0;
+}
+
+.loading {
+  color: rgb(19, 29, 49);
+  font-size: 10px;
+  font-weight: 300;
+  width: 80%;
+  text-align: left;
+}
+
+.bar {
+  width: 80%;
+  height: 10px;
+  border-radius: 10px;
+  margin-top: 5px;
+  border: 1px solid rgb(19, 29, 49);
+  box-shadow: 9px 9px 16px rgb(163, 177, 198, 0.6);
+}
+
+.bar::before {
+  content: "";
+  position: absolute;
+  width: 5%;
+  height: 10px;
+  border-radius: 10px;
+  background: linear-gradient(to left, #e66465, #4450d6);
 }
 
 .countdown-container {
@@ -41,4 +88,28 @@ body {
   position: relative;
   font-size: 12px;
   font-weight: 400;
+}
+
+.explication {
+  top: 4em;
+  position: relative;
+  font-size: 12px;
+  font-weight: 100;
+  text-align: center;
+  width: 80%;
+
+}
+
+@media (max-width: 500px) {
+  .countdown {
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 2em;
+    height: 2em;
+    line-height: 2em;
+  }
+
+  .text {
+    top: -1em;
+  }
 }
